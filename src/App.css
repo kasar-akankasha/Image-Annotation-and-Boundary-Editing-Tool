@@ -1,0 +1,52 @@
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.toolbar {
+  padding: 10px;
+  background: #f0f0f0;
+  display: flex;
+  gap: 10px;
+}
+
+.toolbar button {
+  padding: 5px 10px;
+}
+
+.toolbar button.active {
+  background: #007bff;
+  color: white;
+}
+
+.editor-content {
+  display: flex;
+  flex: 1;
+}
+
+.canvas-container {
+  flex: 1;
+  border: 1px solid #ccc;
+  overflow: auto;
+}
+
+.boundary-list {
+  width: 250px;
+  padding: 10px;
+  border-left: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.boundary-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.boundary-list li {
+  padding: 5px;
+  margin-bottom: 5px;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+}
